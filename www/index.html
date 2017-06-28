@@ -11,7 +11,14 @@
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+	Loading...
+    <script>
+        // PhoneGap event handler
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log("PhoneGap is ready");
+            window.location.replace('https://retire-minted.herokuapp.com');
+        }
+    </script>
 </body>
 </html>
